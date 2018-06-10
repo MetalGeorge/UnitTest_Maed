@@ -42,6 +42,39 @@ public class Analyzer {
      * Implement this method in Part 2
      */
     public static Set<Word> allWords(List<Sentence> sentences) {
+
+        Set<Word> returnSet = new HashSet<>();
+        //List<Word> returnList = new ArrayList<>();
+
+        for (Sentence sentence : sentences) {
+
+            String[] arrayOfWords = sentence.text.split(" ");
+
+            for ( String ss : arrayOfWords) {
+                String possibleTextToAdd = ss.toLowerCase();
+
+                Word foundWord = FindInWordSet(returnSet, possibleTextToAdd);
+                if (foundWord == null) {
+                    Word word = new Word(possibleTextToAdd);
+                    word.increaseTotal(sentence.score);
+                    returnSet.add(word);
+                } else {
+                    foundWord.increaseTotal(sentence.score);
+                }
+            }
+        }
+        return returnSet;
+
+    }
+
+    public static Word FindInWordSet(Set<Word> setOfWords, String textForWord)
+    {
+        Word wordToFind = new Word(textForWord);
+        for (Iterator<Word> it = setOfWords.iterator(); it.hasNext(); ) {
+            Word f = it.next();
+            if (f.equals(wordToFind))
+                return f;
+        }
         return null;
     }
 
