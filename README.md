@@ -7,6 +7,8 @@ Breve descripción sobre las herramientas usadas (sea esta de build, xUnit Frame
  - junit:4.12
  - Travis 
  -- https://travis-ci.com/MetalGeorge/UnitTestingProjectUASB
+ -- El siguiente documento muestra los pasos seguidos:
+ -- https://docs.google.com/document/d/16Z8FVOsQyiaUL7mCbsvWOxGkAepqltKzsE-oyHvECT0/edit
 
 Instrucciones de como setear el ambiente para la ejecución de las pruebas unitarias
   - Descargar el repositorio
