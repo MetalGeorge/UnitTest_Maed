@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.*;
 import java.io.File;
-import java.io.FileNotFoundException;
+
 import java.util.Scanner;
 
 public class Analyzer {
