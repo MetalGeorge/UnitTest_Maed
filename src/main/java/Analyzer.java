@@ -10,8 +10,8 @@ public class Analyzer {
      * Implement this method in Part 1
      */
     public static List<Sentence> ReadFile(String filename) {
-        List<Sentence> list = new ArrayList();
-        List<String> listString = new ArrayList();
+        List<Sentence> list = new ArrayList<>();
+        List<String> listString = new ArrayList<>();
         try (Scanner input = new Scanner(new File (filename))) {
             while (input.hasNext()) {
                 listString.add(input.nextLine());
@@ -27,7 +27,7 @@ public class Analyzer {
 
     public static List<Sentence> ReturnSentencesFromStringList(List<String> listString)
     {
-        List<Sentence> list = new ArrayList();
+        List<Sentence> list = new ArrayList<>();
         for (String possibleSentence : listString) {
             String[] parts = possibleSentence.split(" ");
 

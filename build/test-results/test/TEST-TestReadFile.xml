@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestReadFile" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-11T15:18:10" hostname="DESKTOP-F0E0NGE" time="0.018">
+<testsuite name="TestReadFile" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-11T15:39:08" hostname="DESKTOP-F0E0NGE" time="0.032">
   <properties/>
-  <testcase name="ReadFile_Sentences_Empty" classname="TestReadFile" time="0.018"/>
+  <testcase name="ReadFile_Sentences_Empty" classname="TestReadFile" time="0.032"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

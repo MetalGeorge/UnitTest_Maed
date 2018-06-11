@@ -10,7 +10,7 @@ public class TestSentences {
     @Test
     public void ReturnSentencesFromStringList_2Webdevelopment_ScoresAndTextsOK()
     {
-        List<String> resultString = new ArrayList();
+        List<String> resultString = new ArrayList<>();
         resultString.add("2 Web Development");
         Sentence expected = new Sentence(2, "Web Development");
         List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
@@ -21,7 +21,7 @@ public class TestSentences {
     @Test
     public void ReturnSentencesFromStringList_WrongFormat_EmptyList()
     {
-        List<String> resultString = new ArrayList();
+        List<String> resultString = new ArrayList<>();
         resultString.add("Web Development");
 
         List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
@@ -33,7 +33,7 @@ public class TestSentences {
     @Test
     public void ReturnSentencesFromStringList_WrongRangeGreaterThan2InFirst_EmptyList()
     {
-        List<String> resultString = new ArrayList();
+        List<String> resultString = new ArrayList<>();
         resultString.add("55 Any given string");
         List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
         Assert.assertEquals("String doesn't have the proper format", true, resultList.isEmpty());
@@ -42,7 +42,7 @@ public class TestSentences {
     @Test
     public void ReturnSentencesFromStringList_WrongRangeLesserThan2InFirst_EmptyList()
     {
-        List<String> resultString = new ArrayList();
+        List<String> resultString = new ArrayList<>();
         resultString.add("-3 Any given string");
         List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
         Assert.assertEquals("String doesn't have the proper format", true, resultList.isEmpty());
