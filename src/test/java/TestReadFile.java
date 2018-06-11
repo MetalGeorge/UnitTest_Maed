@@ -13,13 +13,15 @@ public class TestReadFile {
         List<Sentence> list = Analyzer.ReadFile("Non-Existing-File.txt");
         Assert.assertEquals(true, list.isEmpty());
     }
- /*   @Test
+
+    @Test
     public void ReadFile_Sentences_LoadOne()
     {
         Path currentPath = FileSystems.getDefault().getPath("").toAbsolutePath();
-        String fileName = currentPath + "testPhrases.txt";
+        String fileName = currentPath + "\\src\\test\\testPhrases.txt";
+
         List<Sentence> list = Analyzer.ReadFile(fileName);
-        Assert.assertEquals("Loading the test file failed",false, list.isEmpty());
+        Assert.assertEquals("Loading the test file failed" + fileName,false, list.isEmpty());
     }
-    */
+
 }
