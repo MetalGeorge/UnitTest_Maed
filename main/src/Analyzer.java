@@ -30,10 +30,19 @@ public class Analyzer {
         List<Sentence> list = new ArrayList();
         for (String possibleSentence : listString) {
             String[] parts = possibleSentence.split(" ");
-            // TODO validate input strings
-            int score = Integer.parseInt(parts[0]);
-            String restOfSentence = possibleSentence.replaceFirst(parts[0], "");
-            list.add(new Sentence(score, restOfSentence.trim()));
+
+            try {
+                Integer score = Integer.parseInt(parts[0]);
+                if (score>=-2 && score <= 2) {
+                    String restOfSentence = possibleSentence.replaceFirst(parts[0], "");
+                    list.add(new Sentence(score, restOfSentence.trim()));
+                }
+            }
+            catch (NumberFormatException exception)
+            {
+                // intentionally left blank if first string is not parseable as number then nothing to do
+            }
+
         }
         return list;
     }
