@@ -44,7 +44,6 @@ public class Analyzer {
     public static Set<Word> allWords(List<Sentence> sentences) {
 
         Set<Word> returnSet = new HashSet<>();
-        //List<Word> returnList = new ArrayList<>();
 
         for (Sentence sentence : sentences) {
 
@@ -81,10 +80,15 @@ public class Analyzer {
     /*
      * Implement this method in Part 3
      */
-    public static Map<String, Double> calculateScores(Set<Word> words) {
-
-        return null;
-
+    public static Map<String, Double> calculateScores(Set<Word> setOfWords) {
+        Map<String, Double> result = new HashMap<>();
+        if (setOfWords == null)
+            return result;
+        for (Iterator<Word> it = setOfWords.iterator(); it.hasNext(); ) {
+            Word word = it.next();
+            result.put(word.text, word.calculateScore());
+        }
+        return result;
     }
 
 }

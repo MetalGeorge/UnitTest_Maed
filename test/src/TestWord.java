@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Set;
 
 public class TestWord {
-    @Test
 
+    @Test
     public void allWords_Web_Count_1()
     {
         List<Sentence> sentenceList = new ArrayList<>();

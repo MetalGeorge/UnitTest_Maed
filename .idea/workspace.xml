@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fab6cb57-91f0-46e0-97c7-d274a8b466fa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test/src/TestCalculateScores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/Analyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/TestWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/TestWord.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/src/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="272">
+              <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCalculateScores.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/src/TestCalculateScores.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +90,8 @@
       <file leaf-file-name="TestWord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/src/TestWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="71">
+              <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="181" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,6 +154,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_web_</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>_</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -451,6 +474,7 @@
         <option value="$PROJECT_DIR$/main/src/Word.java" />
         <option value="$PROJECT_DIR$/test/src/TestWord.java" />
         <option value="$PROJECT_DIR$/main/src/Analyzer.java" />
+        <option value="$PROJECT_DIR$/test/src/TestCalculateScores.java" />
       </list>
     </option>
   </component>
@@ -538,7 +562,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestWord">
+  <component name="RunManager" selected="JUnit.TestCalculateScores.calculateScores_NullSet_EmptyResult">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -547,12 +571,12 @@
       <module name="main" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCalculateScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWord" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculateScores" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -564,13 +588,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestWord.allWords_FullText_Word_indie_Count_CalculateScore_025" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCalculateScores.calculateScores_EmpySet_EmptyResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWord" />
-      <option name="METHOD_NAME" value="allWords_FullText_Word_indie_Count_CalculateScore_025" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculateScores" />
+      <option name="METHOD_NAME" value="calculateScores_EmpySet_EmptyResult" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -581,13 +605,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestWord.allWords_FullText_Word_indie_Count_CalculateScore_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCalculateScores.calculateScores_NullSet_EmptyResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWord" />
-      <option name="METHOD_NAME" value="allWords_FullText_Word_indie_Count_CalculateScore_1" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculateScores" />
+      <option name="METHOD_NAME" value="calculateScores_NullSet_EmptyResult" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -598,13 +622,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCalculateScores.calculateScores_Word_Score7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWord" />
-      <option name="METHOD_NAME" value="allWords_FullText_Word_it_Count_CalculateScore_0" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculateScores" />
+      <option name="METHOD_NAME" value="calculateScores_Word_Score7" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -615,13 +639,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestWord.allWords_FullText_Word_the_Count_CalculateScore_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCalculateScores.calculateScores_Word_web_Score4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestWord" />
-      <option name="METHOD_NAME" value="allWords_FullText_Word_the_Count_CalculateScore_1" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculateScores" />
+      <option name="METHOD_NAME" value="calculateScores_Word_web_Score4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -672,19 +696,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.helloWorld" />
-      <item itemvalue="JUnit.TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" />
-      <item itemvalue="JUnit.TestWord.allWords_FullText_Word_the_Count_CalculateScore_1" />
-      <item itemvalue="JUnit.TestWord.allWords_FullText_Word_indie_Count_CalculateScore_1" />
-      <item itemvalue="JUnit.TestWord" />
-      <item itemvalue="JUnit.TestWord.allWords_FullText_Word_indie_Count_CalculateScore_025" />
+      <item itemvalue="JUnit.TestCalculateScores.calculateScores_Word_web_Score4" />
+      <item itemvalue="JUnit.TestCalculateScores.calculateScores_Word_Score7" />
+      <item itemvalue="JUnit.TestCalculateScores" />
+      <item itemvalue="JUnit.TestCalculateScores.calculateScores_EmpySet_EmptyResult" />
+      <item itemvalue="JUnit.TestCalculateScores.calculateScores_NullSet_EmptyResult" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestWord" />
-        <item itemvalue="JUnit.TestWord.allWords_FullText_Word_indie_Count_CalculateScore_025" />
-        <item itemvalue="JUnit.TestWord.allWords_FullText_Word_indie_Count_CalculateScore_1" />
-        <item itemvalue="JUnit.TestWord.allWords_FullText_Word_the_Count_CalculateScore_1" />
-        <item itemvalue="JUnit.TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" />
+        <item itemvalue="JUnit.TestCalculateScores.calculateScores_NullSet_EmptyResult" />
+        <item itemvalue="JUnit.TestCalculateScores.calculateScores_EmpySet_EmptyResult" />
+        <item itemvalue="JUnit.TestCalculateScores" />
+        <item itemvalue="JUnit.TestCalculateScores.calculateScores_Word_Score7" />
+        <item itemvalue="JUnit.TestCalculateScores.calculateScores_Word_web_Score4" />
       </list>
     </recent_temporary>
   </component>
@@ -702,27 +726,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestWord_allWords_FullText_Word_it_Count_CalculateScore_0 - 2018.06.10 at 17h 16m 48s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_it_Count_CalculateScore_0 - 2018.06.10 at 17h 16m 59s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_it_Count_CalculateScore_0 - 2018.06.10 at 17h 20m 19s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_it_Count_CalculateScore_0 - 2018.06.10 at 17h 20m 45s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_it_Count_CalculateScore_0 - 2018.06.10 at 17h 21m 31s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_it_Count_CalculateScore_0" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_the_Count_CalculateScore_1 - 2018.06.10 at 17h 23m 42s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_the_Count_CalculateScore_1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestWord_allWords_FullText_Word_indie_Count_CalculateScore_1 - 2018.06.10 at 17h 26m 50s.xml">
-      <configuration name="TestWord.allWords_FullText_Word_indie_Count_CalculateScore_1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestWord - 2018.06.10 at 17h 28m 50s.xml">
       <configuration name="TestWord" configurationId="JUnit" />
     </history-entry>
@@ -731,6 +734,27 @@
     </history-entry>
     <history-entry file="TestWord - 2018.06.10 at 17h 29m 46s.xml">
       <configuration name="TestWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_ - 2018.06.10 at 19h 52m 14s.xml">
+      <configuration name="TestCalculateScores.calculateScores_" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_Word_web_Score4 - 2018.06.10 at 19h 53m 50s.xml">
+      <configuration name="TestCalculateScores.calculateScores_Word_web_Score4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_Word_web_Score4 - 2018.06.10 at 19h 57m 27s.xml">
+      <configuration name="TestCalculateScores.calculateScores_Word_web_Score4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_Word_Score7 - 2018.06.10 at 19h 59m 17s.xml">
+      <configuration name="TestCalculateScores.calculateScores_Word_Score7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores - 2018.06.10 at 20h 02m 54s.xml">
+      <configuration name="TestCalculateScores" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_EmpySet_EmptyResult - 2018.06.10 at 20h 06m 11s.xml">
+      <configuration name="TestCalculateScores.calculateScores_EmpySet_EmptyResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalculateScores_calculateScores_NullSet_EmptyResult - 2018.06.10 at 20h 06m 32s.xml">
+      <configuration name="TestCalculateScores.calculateScores_NullSet_EmptyResult" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -752,6 +776,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.103125" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.37056506" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
@@ -763,7 +788,6 @@
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
     </layout>
@@ -799,7 +823,7 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -1035,7 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/TestWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="71">
+          <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="181" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1044,8 +1069,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/src/Analyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="272">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/src/TestCalculateScores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
