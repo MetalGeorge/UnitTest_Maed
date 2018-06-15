@@ -7,10 +7,20 @@ import java.util.Set;
 
 public class TestWord {
 
+    private List<Sentence> sentenceList = new ArrayList<>();
+
+    private void Initialize_Several_Sentences() {
+        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
+        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
+        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
+        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
+        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+    }
+
     @Test
     public void allWords_Web_Count_1()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(1, "Web"));
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
@@ -22,7 +32,7 @@ public class TestWord {
     @Test
     public void allWords_Word_web_Count_2()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(1, "Web"));
         sentenceList.add(new Sentence(3, "Web"));
 
@@ -35,7 +45,7 @@ public class TestWord {
     @Test
     public void allWords_Word_web_Count_10()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(1, "Web first"));
         sentenceList.add(new Sentence(3, "Web second"));
         sentenceList.add(new Sentence(3, "Web third"));
@@ -56,7 +66,7 @@ public class TestWord {
     @Test
     public void allWords_Word_web_Total_4()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(1, "Web"));
         sentenceList.add(new Sentence(3, "Web"));
 
@@ -72,7 +82,7 @@ public class TestWord {
     @Test
     public void allWords_Word_as_Count_Total_4()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(2, "This was not as much fun as I thought it would be"));
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
@@ -85,7 +95,7 @@ public class TestWord {
     @Test
     public void allWords_Word_as_Count_Score_2()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
+        sentenceList.clear();
         sentenceList.add(new Sentence(2, "This was not as much fun as I thought it would be"));
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
@@ -98,12 +108,7 @@ public class TestWord {
     @Test
     public void allWords_FullText_Word_it_Count_Total_2()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
-        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
-        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
-        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
-        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
-        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+        Initialize_Several_Sentences();
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
 
@@ -115,12 +120,7 @@ public class TestWord {
     @Test
     public void allWords_FullText_Word_it_Count_Score_1()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
-        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
-        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
-        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
-        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
-        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+        Initialize_Several_Sentences();
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
 
@@ -132,12 +132,7 @@ public class TestWord {
     @Test
     public void allWords_FullText_Word_it_Count_CalculateScore_0()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
-        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
-        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
-        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
-        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
-        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+        Initialize_Several_Sentences();
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
 
@@ -149,12 +144,7 @@ public class TestWord {
     @Test
     public void allWords_FullText_Word_the_Count_CalculateScore_1()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
-        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
-        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
-        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
-        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
-        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+        Initialize_Several_Sentences();
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
 
@@ -166,12 +156,7 @@ public class TestWord {
     @Test
     public void allWords_FullText_Word_indie_Count_CalculateScore_025()
     {
-        List<Sentence> sentenceList = new ArrayList<>();
-        sentenceList.add(new Sentence(1, "a bilingual charmer , just like the woman who inspired it"));
-        sentenceList.add(new Sentence(0, "Like a less dizzily gorgeous companion to Mr. Wong 's In"));
-        sentenceList.add(new Sentence(-1, "As inept as big-screen remakes of The Avengers and The Wild Wild West"));
-        sentenceList.add(new Sentence(0, "It 's everything you 'd expect -- but nothing more"));
-        sentenceList.add(new Sentence(2, "Best indie of the year, so far"));
+        Initialize_Several_Sentences();
 
         Set<Word> setOfWords = Analyzer.allWords(sentenceList);
 

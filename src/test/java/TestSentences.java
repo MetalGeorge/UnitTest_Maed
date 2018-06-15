@@ -19,10 +19,22 @@ public class TestSentences {
     }
 
     @Test
-    public void ReturnSentencesFromStringList_WrongFormat_EmptyList()
+    public void ReturnSentencesFromStringList_WrongFormatNoScore_EmptyList()
     {
         List<String> resultString = new ArrayList<>();
         resultString.add("Web Development");
+
+        List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
+
+        Assert.assertEquals("String doesn't have the proper format", true, resultList.isEmpty());
+
+    }
+
+    @Test
+    public void ReturnSentencesFromStringList_WrongFormatNoText_EmptyList()
+    {
+        List<String> resultString = new ArrayList<>();
+        resultString.add("2");
 
         List<Sentence> resultList = Analyzer.ReturnSentencesFromStringList(resultString);
 

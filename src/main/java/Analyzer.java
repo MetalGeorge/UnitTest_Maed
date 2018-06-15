@@ -35,7 +35,9 @@ public class Analyzer {
                 Integer score = Integer.parseInt(parts[0]);
                 if (score>=-2 && score <= 2) {
                     String restOfSentence = possibleSentence.replaceFirst(parts[0], "");
-                    list.add(new Sentence(score, restOfSentence.trim()));
+                    if (restOfSentence.trim().length()>0) {
+                        list.add(new Sentence(score, restOfSentence.trim()));
+                    }
                 }
             }
             catch (NumberFormatException exception)
